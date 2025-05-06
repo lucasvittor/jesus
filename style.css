@@ -134,7 +134,6 @@
     font-size: 14px;
 }
 
-/* Efeito ao passar o mouse */
 .card:hover {
     transform: scale(1.05);
 }
@@ -351,8 +350,8 @@
   }
 
   .declaration-section {
-    padding: 60px 20px;
-    max-width: 900px;
+    padding: 60px 10px;
+    max-width: 1200px;
     margin: auto;
   }
   
@@ -361,21 +360,19 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 40px;
-    justify-content: space-between; /* melhor distribuição */
+    justify-content: space-between;
   }
   
   .text-block {
     flex: 1;
     font-size: 1.1rem;
     line-height: 1.8;
-    min-width: 280px;
   }
   
   .image-block {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* envia a imagem para a direita */
-    min-width: 280px;
+    justify-content: flex-end;
   }
   
   .portrait {
@@ -384,8 +381,6 @@
     width: 100%;
     height: auto;
     border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    display: block;
   }
   
   .social-links {
@@ -397,21 +392,13 @@
   
   .social-links a {
     font-size: 2.0rem;
-    color: #2d3e50;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
   .social-links a:hover {
     transform: scale(1.25);
-    color: #0077b5;
   }
   
-  .footer {
-    margin-top: auto;
-    color: #000000;
-    padding: 20px 15px;
-    text-align: center;
-  }
 
   @media (max-width: 768px) {
     .declaration-content {
@@ -419,13 +406,6 @@
       text-align: center;
     }
   
-    .image-block {
-      justify-content: center;
-    }
-  
-    .portrait {
-      margin-top: 20px;
-    }
   }
 
 /* Responsividade */
@@ -502,131 +482,5 @@
         font-size: 1rem;
     }
 
-}
-
-
-/* Animações */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-
-
-@keyframes fadeInText {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-@keyframes fadeInIcon {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 2s ease-in-out forwards;
-}
-
-.btt-container.fade-in {
-    animation-delay: 1.3s;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-.reveal {
-    opacity: 0;
-    transform-origin: center;
-    transform: translateZ(-100px) scale(0.6) rotateX(30deg);
-    transition: opacity 0.8s ease-out,
-        transform 0.8s ease-out;
-    will-change: opacity, transform;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateZ(0) scale(1) rotateX(0);
-}
-
-.reveal.leave {
-    opacity: 0;
-    transform: translateZ(100px) scale(0.6) rotateX(-15deg);
-    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
 }
 
