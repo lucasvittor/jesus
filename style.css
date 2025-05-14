@@ -52,7 +52,6 @@
 }
 
 @keyframes underline-bounce {
-
     0%,
     100% {
         transform: translateX(-50%) scaleX(1);
@@ -75,15 +74,16 @@
 }
 
 .about-container {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     transition: all 0.3s ease;
     position: relative;
+    gap: 60px;
 }
 
 .image-container {
